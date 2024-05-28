@@ -83,9 +83,6 @@ ifeq "$(CC)" "clang"
             -Wno-unused-local-typedef
 else
   CFLAGS += -Woverride-init -Wno-unused-local-typedefs
-  ifeq "$(BUILDTYPE)" "release"
-    CFLAGS += -Wno-unused-but-set-variable
-  endif
 endif
 
 ifeq "$(OS_NAME)" "Darwin"
