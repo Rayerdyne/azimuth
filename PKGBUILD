@@ -18,9 +18,9 @@ backup=()
 options=()
 install=
 changelog=
-source=("${pkgname%-git}-${pkgver}::git+https://github.com/Rayerdyne/azimuth#tag=v$pkgver")
+source=("${pkgname%-git}-${pkgver}::git+https://github.com/Rayerdyne/azimuth")
 noextract=()
-sha256sums=('2d74d3176d05082ce8a2b5b251bac7db04df6dabe8ee7bcfc62dd748a3729ece')
+sha256sums=('SKIP')
 
 pkgver() {
     cd "${srcdir}/${pkgname%-git}-${pkgver}"
